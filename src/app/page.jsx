@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className='px-4 py-5 bg-white h-screen sm:px-8 md:px-16 lg:px-32'>
-      <div className="flex flex-col lg:flex-row shadow-md items-center h-full rounded-xl">
+      <div className="flex flex-col lg:flex-row border border-gray-100 items-center h-full rounded-xl">
         <div className="w-full lg:w-1/2 p-6 md:p-10 space-y-6 bg-[#F2F2F2] rounded-lg lg:rounded-l-lg lg:rounded-r-none h-full">
           <h2 className="text-2xl text-[#0B5D51]">SIGN IN</h2>
           <p className='text-[#4E4E4E] text-sm'>
