@@ -1,31 +1,17 @@
+
 import Link from 'next/link';
 
-export default function Signup() {
+
+export default function Login() {
   return (
-    <div className=' bg-white h-[calc(100vh-60px)] p-5 flex justify-center '>
-      <div className="flex flex-col lg:flex-row border w-[85%] border-gray-100 items-center h-full rounded-xl">
-        <div className="w-full lg:w-1/2 p-6 md:p-10 space-y-4 bg-[#F2F2F2] rounded-lg lg:rounded-l-lg lg:rounded-r-none h-full">
-          <h2 className="text-2xl text-[#0B5D51]">SIGN UP</h2>
+    <div className='p-5 bg-white h-[calc(100vh-60px)] flex justify-center'>
+      <div className="flex flex-col lg:flex-row border border-gray-100 w-[85%] items-center h-full rounded-xl">
+        <div className="w-full lg:w-1/2 p-6 md:p-10 space-y-6 bg-[#F2F2F2] rounded-lg lg:rounded-l-lg lg:rounded-r-none h-full">
+          <h2 className="text-2xl text-[#0B5D51]">SIGN IN</h2>
           <p className='text-[#4E4E4E] text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repudiandae!
           </p>
           <form className="space-y-4">
-            <div className='flex flex-col gap-4 lg:flex-row lg:gap-5'>
-              <input
-                type="text"
-                id="fname"
-                className="block w-full py-3 px-6 mt-2 rounded-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-                placeholder='Enter First Name'
-              />
-              <input
-                type="text"
-                id="lname"
-                className="block w-full py-3 px-6 mt-2 rounded-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-                placeholder='Enter Last Name'
-              />
-            </div>
             <div>
               <input
                 type="email"
@@ -44,19 +30,23 @@ export default function Signup() {
                 placeholder='Enter Password'
               />
             </div>
+            <div className='flex items-center gap-3'>
+              <input type="checkbox" className='cursor-pointer' />
+              <label className="text-sm text-[#737576]">Remember me</label>
+            </div>
             <div>
               <button
                 type="submit"
                 className="w-full px-4 py-3 mt-3 transition-all text-white bg-[#0B5D51] rounded-md hover:bg-[#0a483f]"
               >
-                SIGN UP
+                SIGN IN
               </button>
             </div>
           </form>
           <p className="text-sm text-[#737576]">
-            Already have an account?{' '}
-            <Link href="/auth/login" className="text-[#0B5D51] hover:underline font-bold">
-              Sign in
+            Don't have an account?{' '}
+            <Link href="/auth/signup" className="text-[#0B5D51] hover:underline font-bold">
+              Sign up
             </Link>
           </p>
         </div>
