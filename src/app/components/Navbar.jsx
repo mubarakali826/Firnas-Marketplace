@@ -5,7 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import Link from "next/link";
 const Navbar = () => {
   return (
-    <nav className="mt-5  w-[100%] h-[66px]">
+    <nav className="mt-5  w-[100%] h-[66px] bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-around h-16">
           <div className="flex-shrink-0 flex items-center">
