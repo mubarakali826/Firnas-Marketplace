@@ -4,3 +4,20 @@
 :root {
 }
 
+/* landing page  */
+
+.landing{
+    background: linear-gradient(to-right,#010F52,white);
+}
+.carousel-indicator {
+    width: 1.75rem;
+    height: 0.5rem;
+    background-color: #D1D5DB;
+    border-radius: 9999px;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition for width and color */
+  }
+  
+  .carousel-indicator.active {
+    width: 2rem;
+    background-color: #3B82F6;
+  }
