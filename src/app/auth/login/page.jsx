@@ -1,13 +1,12 @@
 
 import Link from 'next/link';
 
-
 export default function Login() {
   return (
     <div className='p-5 bg-white h-[calc(100vh-60px)] flex justify-center'>
       <div className="flex flex-col lg:flex-row border border-gray-100 w-[85%] items-center h-full rounded-xl">
         <div className="w-full lg:w-1/2 p-6 md:p-10 space-y-6 bg-[#F2F2F2] rounded-lg lg:rounded-l-lg lg:rounded-r-none h-full">
-          <h2 className="text-2xl text-[#0B5D51]">SIGN IN</h2>
+          <h2 className="text-2xl text-[#0B5D51] font-bold">SIGN IN</h2>
           <p className='text-[#4E4E4E] text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repudiandae!
           </p>
@@ -49,6 +48,9 @@ export default function Login() {
               Sign up
             </Link>
           </p>
+        </div>
+        <div className="image-div object-cover flex items-center justify-center flex-1">
+          <img src="/assets/images/image.png" width={300} height={300}  className='object-cover'></img>
         </div>
       </div>
     </div>
